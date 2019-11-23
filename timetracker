@@ -1,0 +1,28 @@
+protocol Trackable {
+  var courtTime: Int { get set }
+
+
+}
+
+
+struct Session: Trackable {
+   var courtTime: Int
+
+}
+
+func  trackTime (hours: Trackable) {
+  print("You have played some tennis on some court!")
+
+}
+
+trackTime(hours: 8)
+
+
+let driving = { (place: String) in
+print("I'm going to \(place) in my fancy car.")
+
+
+}
+
+var message = driving("Town")
+print(message)
